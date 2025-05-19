@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Melodix - The Hub of NCS Songs</title>
+    <style>
+        body {
+            background-image: url("background.jpeg");
+            background-attachment:fixed;
+            background-size: cover;
+            color: white;
+        }
+        .songs {
+            background-color: grey;
+            border-radius: 27px;
+            width: fit-content;
+        }
+        h3 {
+            text-align: center;
+        }
+        .search {
+            margin-bottom: 20px;
+        }
+        .search input {
+            margin-right: 10px;
+        }
+        .search button {
+            background-color:black;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+        .search button:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Melodix - The Hub of NCS Songs</h1>
+    <div class="search">Search your favourite songs: <input type="text" id="i"><a href="#" onclick="javascript()"><button>Search</button></a>
+    </button></a></div>
+    <div class="songs">
+        <audio controls><source src="CrowdedMelody.mp3"></audio>
+            <h3>Crowded Melody</h3>    
+    </div>
+    <div class="songs">
+        <audio controls><source src="JustRelax.mp3"></audio>
+        <h3>Just Relax</h3>
+    </div>
+    <div class="songs">
+        <audio controls><source src="SummerJazz.mp3"></audio>
+        <h3>Summer Jazz</h3>
+    </div>
+    <div class="songs">
+        <audio controls><source src="VineeHeights.mp3"></audio>
+        <h3>Vinee Heights</h3>
+    </div>
+    <div class="songs">
+        <audio controls><source src="LostInTheEcho.mp3"></audio>
+        <h3>Lost in the Echo</h3>    
+    </div>
+    <div class="songs">
+        <audio controls><source src="HawaiiVacation.mp3"></audio>
+        <h3>Hawaii Vacation</h3>
+    </div>
+    <div class="songs">
+        <audio controls>
+            <source src="BattleOfTheDragons.mp3">
+        </audio>
+        <h3>The Battle of the Dragons</h3>
+    </div>
+    <div class="songs">
+        <audio controls><source src="LegacyOfBaroque.mp3" type=""></audio>
+        <h3>Legacy of Baroque</h3>
+    </div>
+    <div class="songs">
+        <audio controls><source src="SpreadYourWings.mp3"></audio>
+        <h3>Spread Your Wings</h3>
+    </div>
+    <div class="songs">
+        <audio controls><source src="ThePowerIsInYou.mp3"></audio>
+        <h3>The Power is in You</h3>
+    </div>
+    <script>
+        let songs = ["crowded melody", "just relax", "summer jazz", "vinee heights", "lost in the echo", "hawaii vacation"]
+        function javascript() {
+            window.location.assign(`https://open.spotify.com/search/${document.getElementById('i').value}`)
+        }
+    </script>
+</body>
+</html>
